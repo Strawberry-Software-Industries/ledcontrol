@@ -1,10 +1,17 @@
 # ledcontrol
-a simple program to control the status LEDs of your Raspberry Pi!
+**Do it simple - Control the status LEDs of your Raspberry Pi!**
+**By Strawberry Software**
 
-Images<br>
-![image](https://user-images.githubusercontent.com/81520713/152247012-66bd5b19-dc00-4e87-b22f-5278b7882216.png)
-![image](https://user-images.githubusercontent.com/81520713/152247017-19001ff4-3a01-4334-a750-58958945189b.png)
+## What is ledcontrol?
+ledcontrol is a program which was developed especially for the Raspberry Pi. With the help of this program you can easily turn on or off the status leds of your Raspberry Pi. Or even let them blink in different rythm!
 
-![image](https://user-images.githubusercontent.com/81520713/152247641-dbd01589-918d-49c3-ad17-571586907213.png)
+## How does it work?
+ledcontrol was written in C. Using the system() function we can change the LED GPIO map more easily than you think. 
 
-*better desc comming soon!*
+## How can I install ledcontrol?
+Go to our release page ([Click here](https://github.com/Strawberry-Software-Industries/ledcontrol/releases)) and download the latest build. We currently only provide arm64 executables, but we will work on creating armhf executables.
+
+## Supported Platforms
+To start ledcontrol, all you need to do is download the executable. Just execute it and you will get a help menu. <br>
+The important thing is that you need a Linux distribution that has `/sys/class/leds/ledx`
+Otherwise ledcontrol will not work
