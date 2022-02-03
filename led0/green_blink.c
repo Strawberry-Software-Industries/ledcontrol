@@ -19,7 +19,7 @@ int green_blink() {
         sleep(1);   
     }
 
-    char *red_blink_on = "echo 1 > /sys/class/leds/led0/brightness";
+    char *red_blink_on = "echo 0 > /sys/class/leds/led0/brightness";
     system(red_blink_on);
 
     return 0;

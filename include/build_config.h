@@ -1,2 +1,2 @@
-#define VERSION             "0.5.4"
-#define BUILD_DATE          "20220202"
+#define VERSION             "1.0"
+#define BUILD_DATE          "20220203"
