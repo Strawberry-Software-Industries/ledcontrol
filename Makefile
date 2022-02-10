@@ -3,7 +3,7 @@ all:
 	$(install)
 
 build:
-	gcc -Wall *.h *.c include/*.h led1/*.h led1/*.c -o led0/*.h led0/*.c -o ledcontrol
+	gcc -Wall *.h *.c include/*.h led1/*.h led1/*.c -o led0/*.h led0/*.c leds/*.c leds/*.h -o ledcontrol
 
 install:
 	$(build)

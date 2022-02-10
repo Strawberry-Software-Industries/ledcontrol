@@ -14,6 +14,9 @@
 #include "led0/green_blink_fast.h"
 #include "led0/green_blink_slow.h"
 
+#include "leds/blink_all_sync.h"
+#include "leds/blink_all_switch.h"
+
 #include "help.h"
 #include "version.h"
 #include "msleep.h"
@@ -59,8 +62,15 @@ int main(int argc, char* argv[]) {
     else if ((!strcmp(argv[1], "green-blink-slow") && argc == 2) || (!strcmp(argv[1], "gbs") && argc == 2))
         return green_blink_slow();
     
-    else if ((!strcmp(argv[1], "greeb-blink-fast") && argc == 2) || (!strcmp(argv[1], "gbf") && argc == 2))
+    else if ((!strcmp(argv[1], "green-blink-fast") && argc == 2) || (!strcmp(argv[1], "gbf") && argc == 2))
         return green_blink_fast();
+
+
+    else if ((!strcmp(argv[1], "blink-all-sync") && argc == 2) || (!strcmp(argv[1], "bas") && argc == 2))
+        return blink_all_sync();
+
+    else if ((!strcmp(argv[1], "blink-all-switch") && argc == 2) || (!strcmp(argv[1], "basw") && argc == 2))
+        return blink_all_switch();
 
     
 }

@@ -22,7 +22,10 @@ int help() {
     printf(BOLD CYAN "     deactivate-green [dg]: " RESET "Deactivates Green LED (LED0)\n");
     printf(BOLD CYAN "     green-blink [gb]: " RESET "Blinks Green LED (LED0)\n");
     printf(BOLD CYAN "     green-blink-slow [gbs]: " RESET "Blinks Green LED in Slow Mode (LED0)\n");
-    printf(BOLD CYAN "     green-blink-fast [gbf]: " RESET "Blinks Green LED Fast Mode (LED0)\n");
+    printf(BOLD CYAN "     green-blink-fast [gbf]: " RESET "Blinks Green LED Fast Mode (LED0)\n\n");
+
+    printf(BOLD CYAN "     blink-all-sync [bas]: " RESET "Blinks Red and Blue LED in Sync Mode (LED0/LED1)\n");
+    printf(BOLD CYAN "     blink-all-switch [basw]: " RESET "Blinks Red and Blue LED in Switch Mode (LED0/LED1)\n");
     
     return 0;
 }
