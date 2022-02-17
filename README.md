@@ -15,3 +15,5 @@ Go to our release page ([Click here](https://github.com/Strawberry-Software-Indu
 To start ledcontrol, all you need to do is download the executable. Just execute it and you will get a help menu. <br>
 The important thing is that you need a Linux distribution that has `/sys/class/leds/ledx`
 Otherwise ledcontrol will not work
+
+[![badge](https://github.com/Botspot/pi-apps/blob/master/icons/badge.png?raw=true)](https://github.com/Botspot/pi-apps)  
