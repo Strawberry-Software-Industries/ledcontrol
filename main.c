@@ -17,6 +17,8 @@
 #include "leds/blink_all_sync.h"
 #include "leds/blink_all_switch.h"
 
+#include "ledmap.h"
+
 #include "help.h"
 #include "version.h"
 #include "msleep.h"
@@ -71,6 +73,10 @@ int main(int argc, char* argv[]) {
 
     else if ((!strcmp(argv[1], "blink-all-switch") && argc == 2) || (!strcmp(argv[1], "basw") && argc == 2))
         return blink_all_switch();
+
+
+    else if ((!strcmp(argv[1], "detect-os") && argc == 2) || (!strcmp(argv[1], "dos") && argc == 2))
+        return detect_os();
 
     
 }
