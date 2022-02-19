@@ -75,8 +75,14 @@ int main(int argc, char* argv[]) {
         return blink_all_switch();
 
 
-    else if ((!strcmp(argv[1], "detect-os") && argc == 2) || (!strcmp(argv[1], "dos") && argc == 2))
-        return detect_os();
+    else if ((!strcmp(argv[1], "--config") && argc == 2) || (!strcmp(argv[1], "conf") && argc == 2))
+        return mapper();
+    
+    else if ((!strcmp(argv[1], "--config-rpi4") && argc == 2) || (!strcmp(argv[1], "conf-pi4") && argc == 2))
+        return confpi4();
+    
+    else if ((!strcmp(argv[1], "--config-rpi3") && argc == 2) || (!strcmp(argv[1], "conf-pi3") && argc == 2))
+        return confpi3();
 
     
 }
