@@ -1,2 +1,2 @@
-#define VERSION             "1.2 Pre-Release 6"
-#define BUILD_DATE          "2022-02-19"
+#define VERSION             "1.2 Pre-Release 8"
+#define BUILD_DATE          "2022-02-21"

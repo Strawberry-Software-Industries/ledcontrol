@@ -17,8 +17,6 @@
 #include "leds/blink_all_sync.h"
 #include "leds/blink_all_switch.h"
 
-#include "ledmap.h"
-
 #include "help.h"
 #include "version.h"
 #include "msleep.h"
@@ -73,16 +71,6 @@ int main(int argc, char* argv[]) {
 
     else if ((!strcmp(argv[1], "blink-all-switch") && argc == 2) || (!strcmp(argv[1], "basw") && argc == 2))
         return blink_all_switch();
-
-
-    else if ((!strcmp(argv[1], "--config") && argc == 2) || (!strcmp(argv[1], "conf") && argc == 2))
-        return mapper();
-    
-    else if ((!strcmp(argv[1], "--config-rpi4") && argc == 2) || (!strcmp(argv[1], "conf-pi4") && argc == 2))
-        return confpi4();
-    
-    else if ((!strcmp(argv[1], "--config-rpi3") && argc == 2) || (!strcmp(argv[1], "conf-pi3") && argc == 2))
-        return confpi3();
 
     
 }

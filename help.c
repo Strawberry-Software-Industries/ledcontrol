@@ -26,11 +26,6 @@ int help() {
     printf(BOLD CYAN "     green-blink-fast [gbf]: " RESET "Blinks Green LED Fast Mode (LED0)\n\n");
     printf(BOLD YELLOW "    All LEDs\n");
     printf(BOLD CYAN "     blink-all-sync [bas]: " RESET "Blinks Red and Blue LED in Sync Mode (LED0/LED1)\n");
-    printf(BOLD CYAN "     blink-all-switch [basw]: " RESET "Blinks Red and Blue LED in Switch Mode (LED0/LED1)\n\n");
-    printf(BOLD LIGHT_MAGENTA "    Settings\n");
-    printf(BOLD CYAN "     --config [conf]: " RESET "ledcontrol config\n");
-
-
-    
+    printf(BOLD CYAN "     blink-all-switch [basw]: " RESET "Blinks Red and Blue LED in Switch Mode (LED0/LED1)\n");
     return 0;
 }
