@@ -2,10 +2,10 @@ all:
 	$(clean)
 	$(install)
 
-build-arm64:
+arm64:
 	gcc -Wall *.h *.c include/*.h led1/*.h led1/*.c -o led0/*.h led0/*.c leds/*.c leds/*.h -o build/ledcontrol
 
-build-armhf:
+armhf:
 	arm-linux-gnueabi-gcc -Wall *.h *.c include/*.h led1/*.h led1/*.c -o led0/*.h led0/*.c leds/*.c leds/*.h -o build/ledcontrol
 
 install:
