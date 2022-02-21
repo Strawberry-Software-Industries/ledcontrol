@@ -6,7 +6,7 @@ arm64:
 	gcc -Wall *.h *.c include/*.h led1/*.h led1/*.c -o led0/*.h led0/*.c leds/*.c leds/*.h -o build/ledcontrol-arm64
 
 armhf:
-	arm-linux-gnueabi-gcc -Wall *.h *.c include/*.h led1/*.h led1/*.c -o led0/*.h led0/*.c leds/*.c leds/*.h -o build/ledcontrol-arhf
+	arm-linux-gnueabi-gcc -Wall *.h *.c include/*.h led1/*.h led1/*.c -o led0/*.h led0/*.c leds/*.c leds/*.h -o build/ledcontrol-armhf
 
 install:
 	$(build)
